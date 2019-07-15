@@ -32,7 +32,7 @@ TurnTable::TurnTable()
 	m_pTimer = new QTimer(this);
 	m_pTimer->setInterval(INTERVAL);
 	connect(m_pTimer, SIGNAL(timeout()), this, SLOT(changeRorate()));
-	m_nowRorate = -90;
+	m_nowRorate = -75;
 }
 
 
