@@ -1,5 +1,4 @@
-﻿# Qt_TurnTable  
-DEMO  
+﻿# Qt_TurnTable   
 ===========================  
 ###########运行示例  
 ![image](https://github.com/Lilith90s/Qt_TurnTable/blob/master/display.gif)  
@@ -19,4 +18,3 @@ QT5.10+
 │	├──	TurnTable.cpp  
 │	└── UiCtrl.cpp  
 └── display.gif					// 示例  
-
