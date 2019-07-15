@@ -36,9 +36,15 @@
     <ClCompile Include="TurnTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UiCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="TurnTable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="UiCtrl.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

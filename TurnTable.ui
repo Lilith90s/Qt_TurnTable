@@ -1,25 +1,27 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>TurnTableClass</class>
- <widget class="QWidget" name="TurnTableClass" >
-  <property name="objectName" >
-   <string notr="true">TurnTableClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QWidget" name="TurnTableClass">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>600</width>
-	<height>400</height>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>628</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>TurnTable</string>
   </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="v_mainLayout"/>
+   </item>
+  </layout>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="TurnTable.qrc"/>
+  <include location="TurnTable.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>
