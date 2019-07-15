@@ -13,6 +13,7 @@
 #include <qdebug.h>
 #include <qbackingstore.h>
 #include <qlabel.h>
+#include <QTime>
 
 class TurnTable :
 	public QWindow

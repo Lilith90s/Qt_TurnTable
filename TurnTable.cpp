@@ -61,7 +61,7 @@ bool TurnTable::event(QEvent * event)
 void TurnTable::render(QPainter * painter)
 {
 
-	qDebug("start render");
+	//qDebug("start render");
 	// 指针
 
 	/***********画圆盘************/
@@ -119,14 +119,14 @@ void TurnTable::set_resultLabel(QLabel * Label)
 /*******************slots*************************/
 void TurnTable::changeRorate()
 {
-	qDebug() << m_nowRorate << " " << m_targetRorate;
+	//qDebug() << m_nowRorate << " " << m_targetRorate;
 	m_nowRorate += m_everyRorate;
 	requestUpdate();
 	if (m_nowRorate >= m_targetRorate)
 	{
 		m_pTimer->stop();
 		int number = (m_nowRorate + 90) % 360 / (360 / m_word_list.size());
-		qDebug() << number;
+		//qDebug() << number;
 		textLabel->setText(m_word_list[number]);
 		//m_nowRorate = 0;
 	}
@@ -138,6 +138,9 @@ void TurnTable::set_RandTimer()
 	m_nowRorate = -90;
 	do
 	{
+		QTime t;
+		t = QTime::currentTime();
+		qsrand(t.msec() + t.second() * 1000);
 		m_targetRorate = qrand() % 360;
 	} while (360 / m_color_list.size() % m_targetRorate == 0);
 	m_targetRorate += 360;
